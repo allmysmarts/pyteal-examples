@@ -73,12 +73,12 @@ approval_program, clear_state_program, contract = router.compile_program(
 )
 
 if __name__ == "__main__":
-    with open("algobank_approval.teal", "w") as f:
+    with open("./abi/algobank_approval.teal", "w") as f:
         f.write(approval_program)
 
-    with open("algobank_clear_state.teal", "w") as f:
+    with open("./abi/algobank_clear_state.teal", "w") as f:
         f.write(clear_state_program)
 
-    with open("algobank.json", "w") as f:
+    with open("./abi/algobank.json", "w") as f:
         f.write(json.dumps(contract.dictify(), indent=4))
 

@@ -1,0 +1,8 @@
+sandbox
+venv
+.env
+build
+.DS_Store
+__pycache__/
+.idea
+.pytest_cache
